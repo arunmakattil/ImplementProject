@@ -3,6 +3,7 @@ language: csharp
 mono: none
 dotnet: net8.0
 solution: ImplementProject.sln
+
 #install:
  # - nuget restore ImplementProject.sln
   #- nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
