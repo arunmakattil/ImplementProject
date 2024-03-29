@@ -1,4 +1,4 @@
-#dist: xenial
+dist: xenial
 language: csharp
 mono: none
 dotnet: 8.0.202
