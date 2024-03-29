@@ -1,7 +1,7 @@
 #dist: xenial
 language: csharp
-mono: latest
-#dotnet: 2.1.502
+mono: none
+dotnet: net8.0
 solution: ImplementProject.sln
 #install:
  # - nuget restore ImplementProject.sln
