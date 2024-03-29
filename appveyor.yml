@@ -8,5 +8,5 @@ before_build:
   - nuget restore
 
 build:
-  project: https://github.com/arunmakattil/ImplementProject.git/ImplementProject.sln
+  project: ImplementProject/ImplementProject.sln
   verbosity: minimal
