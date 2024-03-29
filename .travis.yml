@@ -7,11 +7,11 @@ mono: none
 dotnet: 3.1  # Change this to the version of .NET SDK you're using
 
 before_script:
-  - cd YourProjectDirectory  # Change this to the directory where your .NET project resides
+  - cd ImplementProject  # Change this to the directory where your .NET project resides
   - dotnet restore
 
 script:
   - dotnet build
-  - dotnet test YourProjectName.Tests/YourProjectName.Tests.csproj  # Adjust the test project path
+  - dotnet test ImplementProject.Tests/ImplementProject.Tests.csproj  # Adjust the test project path
 
 # Optionally, you can add additional configurations such as notifications, deployment, etc.
