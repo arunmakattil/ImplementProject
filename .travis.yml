@@ -1,11 +1,13 @@
-dist: xenial
+#dist: xenial
 language: csharp
+mono: none
+dotnet: 2.1.502
+solution: ImplementProject.sln
 install:
   - nuget restore ImplementProject.sln
-  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
-solution: ImplementProject.sln
-dotnet: 2.1.502  # Change this to the version of .NET SDK you're using
-mono: none
-
+  #- nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
 script:
-  - dotnet build ImplementProject
+  - dotnet restore
+  - dotnet test
+  #- msbuild /p:Configuration=Release ImplementProject.sln
+  #- mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./MyProject.Tests/bin/Release/MyProject.Tests.dll
