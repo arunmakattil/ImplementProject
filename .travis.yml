@@ -1,13 +1,13 @@
+dist: xenial
 language: csharp
 install:
   - nuget restore ImplementProject.sln
   - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
 solution: ImplementProject.sln
-mono: none
 dotnet: 8.0.3  # Change this to the version of .NET SDK you're using
+mono: none
 
 script:
-  - dotnet build
-  - dotnet test ImplementProject.Tests/ImplementProject.Tests.csproj  # Adjust the test project path
+  - dotnet build ImplementProject
+  - dotnet test ImplementProject.Tests
 
-# Optionally, you can add additional configurations such as notifications, deployment, etc.
