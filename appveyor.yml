@@ -9,5 +9,5 @@ before_build:
   - nuget restore
 
 build:
-  project: ImplementProject/ImplementProject.sln
+  project: ImplementProject.sln
   verbosity: minimal
