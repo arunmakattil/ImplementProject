@@ -4,7 +4,7 @@ install:
   - nuget restore ImplementProject.sln
   - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
 solution: ImplementProject.sln
-dotnet: 5.0.0  # Change this to the version of .NET SDK you're using
+dotnet: 2.1.502  # Change this to the version of .NET SDK you're using
 mono: none
 
 script:
