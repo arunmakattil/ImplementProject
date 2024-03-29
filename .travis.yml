@@ -6,9 +6,6 @@ solution: ImplementProject.sln
 mono: none
 dotnet: 3.1  # Change this to the version of .NET SDK you're using
 
-before_script:
-  - dotnet restore
-
 script:
   - dotnet build
   - dotnet test ImplementProject.Tests/ImplementProject.Tests.csproj  # Adjust the test project path
