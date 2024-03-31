@@ -11,3 +11,12 @@ before_build:
 build:
   project: ImplementProject.sln
   verbosity: minimal
+
+after_build:
+  # Generate the .exe file for the .NET 8 application
+  - dotnet publish -c Release -r win-x64 --self-contained true -o .\publish
+
+artifacts:
+  - path: publish\**\*.exe
+    name: MyAppExecutable
+    type: exe
